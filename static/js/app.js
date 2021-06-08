@@ -20,3 +20,14 @@ function buildTable(data){
           });
     })
 }
+
+//Click function
+function runClick(){
+    var date = d3.select("#datetime").property("value");
+    var filterData = tableData;
+    if(date){
+        filterData = filterData.filter(x => x.datetime === date);
+    }
+    console.log(filterData);
+    buildTable(filterData);
+}
