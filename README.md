@@ -24,9 +24,6 @@ Write code that will create a table dynamically based upon a [UFO sightings data
   4. `country`
   5. `shape`
 
-- - -
 
-### Dataset
-
-* [UFO Sightings Data](StarterCode/static/js/data.js)
+* [UFO Sightings Data](/static/js/data.js)
 
