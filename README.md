@@ -12,7 +12,7 @@ Write code that will create a table dynamically based upon a [UFO sightings data
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
-## Level 2: Multiple Search Categories (Optional)
+## Level 2: Multiple Search Categories (Optional-Unfinished)
 
 * Complete all of Level 1 criteria.
 
