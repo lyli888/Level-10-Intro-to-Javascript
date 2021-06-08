@@ -22,7 +22,7 @@ function buildTable(data){
 }
 
 //Click function
-function runClick(){
+function click(){
     var date = d3.select("#datetime").property("value");
     var filterData = tableData;
     if(date){
@@ -31,3 +31,6 @@ function runClick(){
     console.log(filterData);
     buildTable(filterData);
 }
+
+// filter button for runClick
+d3.select("#filter-btn").on("click", click);
