@@ -7,3 +7,16 @@ var table = d3.select("tbody");
 //Check weather data input from data.js file
 console.log(data);
 
+//Table Function 
+function buildTable(data){
+    table.html("");
+    data.forEach(function(ufoData) {
+        console.log(ufoData);
+        var row = table.append("tr");
+        Object.entries(ufoData).forEach(function([key, value]) {
+            // Append a cell to the row for each value
+            var cell = row.append("td");
+            cell.text(value);
+          });
+    })
+}
