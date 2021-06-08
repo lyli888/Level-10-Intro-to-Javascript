@@ -2,17 +2,17 @@
 var tableData = data;
 
 //Create Variable for Table
-var table = d3.select("tbody");
+var tbody = d3.select("tbody");
 
 //Check weather data input from data.js file
 console.log(data);
 
 //Table Function 
 function buildTable(data){
-    table.html("");
+    tbody.html("");
     data.forEach(function(ufoData) {
         console.log(ufoData);
-        var row = table.append("tr");
+        var row = tbody.append("tr");
         Object.entries(ufoData).forEach(function([key, value]) {
             // Append a cell to the row for each value
             var cell = row.append("td");
@@ -22,7 +22,7 @@ function buildTable(data){
 }
 
 //Click function
-function click(){
+function runClick(){
     var date = d3.select("#datetime").property("value");
     var filterData = tableData;
     if(date){
@@ -33,6 +33,6 @@ function click(){
 }
 
 // filter button for runClick
-d3.select("#filter-btn").on("click", click);
+d3.select("#filter-btn").on("click", runClick);
 
-buildTable(table);
+buildTable(tableData);
