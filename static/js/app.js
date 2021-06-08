@@ -34,3 +34,5 @@ function click(){
 
 // filter button for runClick
 d3.select("#filter-btn").on("click", click);
+
+buildTable(table);
