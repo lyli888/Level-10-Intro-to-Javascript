@@ -1,7 +1,8 @@
 # JavaScript and DOM Manipulation
 
+See [Screenshots](/Screenshots/) for project results.
 
-Write code that will create a table dynamically based upon a [UFO sightings dataset](/static/js/data.js). Users will be able to filter the table data for specific values. Use pure JavaScript, HTML, and CSS, and D3.js.
+Build a website with a table dynamically based upon a [UFO sightings dataset](/static/js/data.js). Users will be able to filter the table data for specific values. Use pure JavaScript, HTML, and CSS, and D3.js.
 
 
 ## Level 1: Automatic Table and Date Search (Required)
